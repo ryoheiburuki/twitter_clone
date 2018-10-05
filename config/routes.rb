@@ -5,4 +5,6 @@ Rails.application.routes.draw do
       get :top
     end
   end
+  
+  root to:'murmur#top'
 end
