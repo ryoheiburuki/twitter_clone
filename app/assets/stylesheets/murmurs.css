@@ -1,0 +1,151 @@
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative; }
+
+.header {
+  background-color: #4aa0eb;
+  height: 7rem;
+  width: 980px; }
+
+.header li {
+  font-size: 2rem;
+  float: left;
+  width: 200px;
+  list-style: none;
+  text-align: center;
+  padding-top: 2.5rem;
+  vertical-align: middle; }
+
+.header a {
+  color: #FFFFFF; }
+
+.header a:hover {
+  opacity: 0.5; }
+
+.clearfix :after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+  display: block; }
+
+.notice {
+  font-size: 2rem;
+  text-align: center;
+  background-color: red; }
+
+.sub_title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 40px; }
+
+.top_table {
+  width: 50rem;
+  margin: auto; }
+
+.top_table table {
+  font-size: 2rem; }
+
+.index_wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 60px; }
+
+.table_title {
+  width: 150px;
+  height: 30px;
+  text-align: center; }
+
+.table_content {
+  width: 349px;
+  height: 30px; }
+
+.content {
+  font-size: 2rem; }
+
+.twiiter {
+  font-size: 3rem; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 1rem 5rem; }
+
+.button:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none; }
+
+.edit {
+  background: green; }
+
+.delete {
+  background: red; }
+
+.form {
+  margin: auto;
+  width: 30rem;
+  position: relative; }
+
+.input_area {
+  width: 100%;
+  margin: auto; }
+
+.input_area label {
+  font-size: 1.5rem;
+  margin: auto 0; }
+
+.input_area textarea {
+  width: 80%;
+  -webkit-border-radius: 10px; }
+
+.submit {
+  font-size: 1.5rem;
+  height: 3rem;
+  padding: 0.3rem 1rem;
+  display: block;
+  margin: auto; }
+
+.confirm_wrapper {
+  width: 500px;
+  margin: auto; }
+
+.confirm_content {
+  font-size: 1.5rem; }
+
+.footer {
+  background-color: #4aa0eb;
+  height: 40px;
+  width: 980px;
+  position: absolute;
+  bottom: 0;
+  margin-top: 30px; }
+
+.footer p {
+  font-size: 1.5rem;
+  text-align: center; }
+
+/*# sourceMappingURL=murmurs.css.map */

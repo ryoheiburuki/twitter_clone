@@ -1,0 +1,17 @@
+<% if @murmur.errors.any? %>
+  <div>
+    <%# msg = @murmur.errors.full_messages %>
+    <%#= msg %>
+    <p>1文字以上、140文字以下でつぶやいてください</p>
+  </div>
+<% end %>
+
+<%= form_with(model:@murmur, local:true, url:choose_new_or_edit)do |form| %>
+  <div class=form>
+    <div class=input_area>
+      <%= form.label "本文" %>
+      <%= form.text_area :content, placeholder: "いまどうしてる？" %> 
+    </div>
+    <%= form.submit "投稿", class: :submit %>
+  </div>  
+<% end %>

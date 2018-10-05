@@ -1,0 +1,21 @@
+<html>
+<body>
+<div class=container>
+  <%= render 'header' %>
+  
+  <p class=title>このつぶやきでいいですか？</p>
+  
+  <div class=confirm_wrapper>
+  <%= form_with(model: @murmur, url: murmurs_path, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+  
+    <p class=confirm_content><%= @murmur.content %></p>
+    <%= form.submit  "本当につぶやく", class: :submit %>
+  <% end %>
+  
+  </div>
+  
+  <%= render 'footer' %>
+</div>
+</body>
+</html>

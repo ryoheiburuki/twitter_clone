@@ -1,0 +1,29 @@
+<html>
+<body>
+<div class=container>
+  <%= render 'header' %>
+  
+  <p class=title>つぶやき一覧</p>
+  
+  <p class=notice><%= notice %></p>
+  
+  <table class=index_wrapper>
+    <% @murmur.each do |murmur| %>
+      <div>
+      <tr>
+        <td class=content><%= murmur.content %></td>
+      </tr>  
+      <tr>
+        <td><%= link_to '編集する', edit_murmur_path(murmur.id), class: "button edit" %></td>
+        <td><%= link_to '削除する', murmur_path(murmur.id), class: "button delete", method: :delete, data:{confirm: "本当に削除しますか？"} %></td>
+      </tr>
+      </div>
+    <% end %>
+  </table>
+  
+  <%= render 'footer' %>
+
+</div>
+</body>
+
+</html>
